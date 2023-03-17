@@ -22,7 +22,6 @@ const CreateCampaign = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(form)
-
   }
   return (
     <div className='bg-[#1c1c24] flex justify-center items-center flex-col rounded-[10px] sm:p-10 p-4'>
@@ -31,7 +30,7 @@ const CreateCampaign = () => {
         <h1 className='font-epilogue font-bold sm: text-[25px] text-[18px] leading-[38px] text-white'>Start a campaign</h1>
       </div>
 
-      <form onSubmit={() => handleSubmit} className='w-full mt-[65px] flex flex-col gap-[30px]'>
+      <form onSubmit={handleSubmit} className='w-full mt-[65px] flex flex-col gap-[30px]'>
         <div className='flex flex-wrap gap-[40px] '>
           <FormField 
             labelName='Your Name *'
@@ -47,7 +46,7 @@ const CreateCampaign = () => {
             placeholder='Write a title'
             inputType='text'
             value={form.title}
-            handleChange={()=> (e)=> {
+            handleChange={(e)=> {
               handleFormFieldChange('title', e)
             }}
           />
@@ -57,7 +56,7 @@ const CreateCampaign = () => {
             placeholder='Write a story'
             isTextArea
             value={form.description}
-            handleChange={()=> (e)=> {
+            handleChange={(e)=> {
               handleFormFieldChange('description', e)
             }}
           />
@@ -71,7 +70,7 @@ const CreateCampaign = () => {
             placeholder='Eth 0.50'
             inputType='text'
             value={form.target}
-            handleChange={()=> (e)=> {
+            handleChange={(e)=> {
               handleFormFieldChange('target', e)
             }}
           />
@@ -80,7 +79,7 @@ const CreateCampaign = () => {
             placeholder='End date'
             inputType='date'
             value={form.deadline}
-            handleChange={()=> (e)=> {
+            handleChange={(e)=> {
               handleFormFieldChange('deadline', e)
             }}
           />
@@ -90,7 +89,7 @@ const CreateCampaign = () => {
             placeholder='Place image URL of your campaign'
             inputType='url'
             value={form.image}
-            handleChange={()=> (e)=> {
+            handleChange={(e)=> {
               handleFormFieldChange('image', e)
             }}
           />
