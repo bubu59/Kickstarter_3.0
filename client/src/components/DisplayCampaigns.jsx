@@ -1,6 +1,7 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import {loader} from '../assets'
+import {FundCard} from '../components'
 
 const DisplayCampaigns = ({title, isLoading, campaigns}) => {
     const navigate = useNavigate()

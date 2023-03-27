@@ -3,9 +3,14 @@
   "scripts": {
     "build": "npx thirdweb@latest detect",
     "deploy": "npx thirdweb@latest deploy",
-    "release": "npx thirdweb@latest release"
+    "release": "npx thirdweb@latest release",
+    "test": "npx hardhat@latest test"
   },
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.5",
+    "chai": "^4.3.7",
+    "ethers": "^5.7.2",
     "hardhat": "^2.10.1"
   },
   "dependencies": {
