@@ -20,9 +20,3 @@ This is a basic overview of events that take place during the lifecycle of a use
 - Mobile responsive design 
 - Writing smart contract functions
 
-
-## In Progress 
-- Authentication Modal
-- Custom Error handling
-- Writing out unit tests for edge cases ( smart contract ) 
-- Learning how to use CI/CD for deployment 
